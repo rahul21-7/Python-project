@@ -16,7 +16,7 @@ It supports multiple datasets, automatically handles downloading, extraction, pr
 
 📦 Requirements
 
-### For loading existing file
+### For loading existing files(datasets)
 The current program downloads the files and if we want to upload the files into `./content ` directory, the program will skip the downloading part and continues to unzipping the files
 
 Make sure you have the following installed:
