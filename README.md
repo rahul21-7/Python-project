@@ -16,18 +16,19 @@ It supports multiple datasets, automatically handles downloading, extraction, pr
 
 📦 Requirements
 
-###
-For loading existing file
+### For loading existing file
 The current program downloads the files and if we want to upload the files into `./content ` directory, the program will skip the downloading part and continues to unzipping the files
 
 Make sure you have the following installed:
-```python>=3.8
+```
+python>=3.8
 tensorflow>=2.10
 numpy
 scikit-learn
 matplotlib
 tqdm
-requests```
+requests
+```
 
 Install all dependencies at once:
 `pip install tensorflow numpy scikit-learn matplotlib tqdm requests`
