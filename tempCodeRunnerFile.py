@@ -1,0 +1,1 @@
+ds, class_names = load_dataset_images(str(data_folder), cfg['image_size'], batch_size=32)

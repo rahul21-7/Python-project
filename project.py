@@ -21,13 +21,13 @@ np.random.seed(SEED)
 random.seed(SEED)
 
 DATASET_CONFIG = {
-    'multisense': {
-        'download_url': 'https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/krkft96n43-1.zip',
-        'zip_path': './content/Multisense.zip',
-        'base_folder': './content/Multisense',
-        'image_size': (224, 224),
-        'class_zip': True
-    },
+    # 'multisense': {
+    #     'download_url': 'https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/krkft96n43-1.zip',
+    #     'zip_path': './content/Multisense.zip',
+    #     'base_folder': './content/Multisense',
+    #     'image_size': (224, 224),
+    #     'class_zip': True
+    # },
     'iiitdmj_smoke': {
         'download_url': 'https://data.mendeley.com/public-files/datasets/4mn2g8cnsf/files/48d746ea-229f-46d2-b97e-977b585157ec/file_downloaded',
         'zip_path': './content/IIITDMJ_Smoke.zip',
