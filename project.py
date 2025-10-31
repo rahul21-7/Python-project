@@ -21,23 +21,23 @@ np.random.seed(SEED)
 random.seed(SEED)
 
 DATASET_CONFIG = {
-    'multisense': {
-        'download_url': 'https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/krkft96n43-1.zip',
-        'zip_path': './content/multisense.zip',
-        'base_folder': './content/Multisense',
-        'image_size': (224, 224),
-        'class_zip': True
-    },
+    # 'multisense': {
+    #     'download_url': 'https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/krkft96n43-1.zip',
+    #     'zip_path': './content/Multisense.zip',
+    #     'base_folder': './content/Multisense',
+    #     'image_size': (224, 224),
+    #     'class_zip': True
+    # },
     'iiitdmj_smoke': {
         'download_url': 'https://data.mendeley.com/public-files/datasets/4mn2g8cnsf/files/48d746ea-229f-46d2-b97e-977b585157ec/file_downloaded',
-        'zip_path': './content/smoke.zip',
+        'zip_path': './content/IIITDMJ_Smoke.zip',
         'base_folder': './content/IIITDMJ_Smoke',
         'image_size': (224, 224),
         'class_zip': False
     },
     'gastroendonet': {
         'download_url': 'https://data.mendeley.com/public-files/datasets/ffyn828yf4/files/e40ec933-4112-4eae-bedd-d0197d1e2d71/file_downloaded',
-        'zip_path': './content/gastroendonet.zip',
+        'zip_path': './content/GastroEndoNet Comprehensive Endoscopy Image Dataset for GERD and Polyp Detection.zip',
         'base_folder': './content/GastroEndoNet',
         'image_size': (224, 224),
         'class_zip': False
