@@ -21,13 +21,13 @@ np.random.seed(SEED)
 random.seed(SEED)
 
 DATASET_CONFIG = {
-    # 'multisense': {
-    #     'download_url': 'https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/krkft96n43-1.zip',
-    #     'zip_path': './content/Multisense.zip',
-    #     'base_folder': './content/Multisense',
-    #     'image_size': (224, 224),
-    #     'class_zip': True
-    # },
+    'multisense': {
+        'download_url': 'https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/krkft96n43-1.zip',
+        'zip_path': './content/Multisense.zip',
+        'base_folder': './content/Multisense',
+        'image_size': (224, 224),
+        'class_zip': True
+    },
     'iiitdmj_smoke': {
         'download_url': 'https://data.mendeley.com/public-files/datasets/4mn2g8cnsf/files/48d746ea-229f-46d2-b97e-977b585157ec/file_downloaded',
         'zip_path': './content/IIITDMJ_Smoke.zip',
@@ -199,7 +199,7 @@ def process_dataset(dataset_key):
     if not os.path.exists(cfg['zip_path']):
         download_file(cfg['download_url'], cfg['zip_path'])
 
-    data_folder = extract_zip_with_structure_handling(cfg['zip_path'], extract_to='/content', dataset_key=dataset_key)
+    data_folder = extract_zip_with_structure_handling(cfg['zip_path'], extract_to='./content', dataset_key=dataset_key)
     ds, class_names = load_dataset_images(str(data_folder), cfg['image_size'], batch_size=32)
     print(f"Discovered classes: {class_names}")
 
